@@ -1,0 +1,11 @@
+name: demo
+on:
+  push:
+    branches:
+      - 'gh-actions'
+
+jobs:
+    TestFileChanges:
+        runs-on: 'ubuntu-20.04'
+        steps:
+            - run: echo "hello world!"
